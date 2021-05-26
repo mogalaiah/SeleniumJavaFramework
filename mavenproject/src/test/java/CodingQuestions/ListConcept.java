@@ -1,8 +1,6 @@
 package CodingQuestions;
 
-import java.awt.List;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
@@ -26,7 +24,6 @@ public class ListConcept {
 
 	public static void removeListItems() {
 		System.out.println("Removed Elemet From List: " + list.remove(0));
-
 	}
 
 	public static void sortListItems() {
