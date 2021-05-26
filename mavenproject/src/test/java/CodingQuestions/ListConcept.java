@@ -30,15 +30,26 @@ public class ListConcept {
 		Collections.sort(list);
 		System.out.println("After sorting: " + list);
 	}
+	
+	public static void removeAll() {
+		System.out.println("Removed All the Elements from List: "+list.removeAll(list));
+	}
+	
+	public static void clearList() {
+		list.clear();
+		System.out.println("List is cleared: "+list.isEmpty());
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		addListItems();
 		getListItems();
+		sortListItems();
 		removeListItems();
 		System.out.println("After Remove The Element from List below are the Elements: ");
 		getListItems();
-
+		removeAll();
+		clearList();
 	}
 
 }
