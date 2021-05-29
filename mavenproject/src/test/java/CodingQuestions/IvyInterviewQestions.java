@@ -36,7 +36,7 @@ public class IvyInterviewQestions {
 		}
 	
 	}
-	public static void wsordreverseforstring() {
+	public static void wordsreverseforstring() {
 		String str="my name is mogalaiah";
 		String str2="";
 		String[] spl= str.split(" ");
@@ -44,7 +44,18 @@ public class IvyInterviewQestions {
 			StringBuffer stb= new StringBuffer(word);
 			str2= str2+" "+stb.reverse();
 		}
-		System.out.println(str2);
+		System.out.println("Reversed String is: "+str2);
+	}
+	
+	public static void reverseWithOutWordsString() {
+		
+		String str1="My Name Is Mogalaiah Gannepaka";
+		String str2="";
+		String[] str3= str1.split(" ");
+		for(int i=str3.length-1;i>=0;i--) {
+			str2=str2+" "+str3[i];			
+		}
+		System.out.println("Reversed String is: "+str2);
 	}
 	
 	public static void stringlenthincreasedfindtherepeatedchar(int n) {
@@ -52,16 +63,12 @@ public class IvyInterviewQestions {
 		int rem=n%(str.length());
 		int quotent= n/(str.length());
 		String str2=str;
-		for(int i=0;i<n;i++) {			
-			if(quotent>0) {
-				str2= str2+str;
-				i=i+str.length();
-				quotent--;
-			}
-			else {
-				str2=str2+str.substring(0, rem);
-				i=i+str.length();
-			}
+		while(quotent>0) {
+			str2=str2+str;
+			quotent--;
+		}
+		if(rem>0) {
+			str2=str2+str.substring(0, rem);
 		}
 System.out.println("After updated string is: "+str2);
 	}
@@ -69,8 +76,9 @@ System.out.println("After updated string is: "+str2);
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//markscomparisionforStudents();
-		//wsordreverseforstring();
-		stringlenthincreasedfindtherepeatedchar(1);
+		//wordsreverseforstring();
+		stringlenthincreasedfindtherepeatedchar(10);
+		//reverseWithOutWordsString();
 		
 		}
 

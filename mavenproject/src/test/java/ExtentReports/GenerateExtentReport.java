@@ -15,7 +15,7 @@ public class GenerateExtentReport {
 	public static ExtentHtmlReporter reporter;
 
 	public static void setExtent() {
-		reporter= new ExtentHtmlReporter(System.getProperty("user.dir") + "/MyReort/MyOwnReport_" + System.currentTimeMillis() + ".html");
+		reporter= new ExtentHtmlReporter(System.getProperty("user.dir") + "/MyReort/"+ "MyOwnReport_" + System.currentTimeMillis() + ".html");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Host Name: ", "localhost");

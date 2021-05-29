@@ -33,9 +33,9 @@ public class IVY {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//findthecharecters("ABC123##$@^");
-		int a=fun(1);
-		System.out.println(a);
+		findthecharecters("ABC123##$@^");
+		//int a=fun(1);
+		//System.out.println(a);
 
 	}
 

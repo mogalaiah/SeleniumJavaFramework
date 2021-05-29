@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 import java.util.Random;
 import java.util.stream.DoubleStream;
 public class Practise {
+	
 	public static void eachlatterreeatednumberoftimes(String str) {
 		Map<String,Integer> map= new HashMap<String, Integer>();
 		for(int i=0;i<str.length();i++) {

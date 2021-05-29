@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="40" parallel="classes" name="Failed suite [TestCases.Test1]" verbose="0">
+<suite thread-count="40" parallel="classes" name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="40" parallel="classes" name="Command line test(failed)" verbose="0">
     <classes>
+      <class name="TestCases.Test2">
+        <methods>
+          <include name="endExtend"/>
+          <include name="userLogOutFromApplication"/>
+          <include name="userClickOnMinistatementLink"/>
+          <include name="userVerifyTransactionDetailsAreDislayedAccourdingToSelectedAccount"/>
+          <include name="intiateBrowser"/>
+          <include name="quitDriver"/>
+          <include name="verifyLogInfunctionality"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- TestCases.Test2 -->
       <class name="TestCases.Test1">
         <methods>
           <include name="setExtent"/>
-          <include name="skip"/>
+          <include name="closeBrowser"/>
           <include name="logOut"/>
+          <include name="intiateBrowser"/>
           <include name="endExtend"/>
+          <include name="quitDriver"/>
         </methods>
       </class> <!-- TestCases.Test1 -->
     </classes>
   </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [TestCases.Test1] -->
+</suite> <!-- Failed suite [Command line suite] -->

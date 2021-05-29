@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestNGListener" class="navigator-link">
-              <span class="suite-name border-failed">TestNGListener</span>
+              <span class="suite-name border-passed">TestNGListener</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TestNGListener" class="navigator-link ">
-                    <span>D:\NewWorkSpace\mavenproject\testng.xml</span>
+                    <span>C:\Users\Mogalaiah Gannepaka\git\SeleniumJavaFramework\mavenproject\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,35 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestNGListener" class="hide-methods failed suite-TestNGListener"> (hide)</a> <!-- hide-methods failed suite-TestNGListener -->
-                      <a href="#" panel-name="suite-TestNGListener" class="show-methods failed suite-TestNGListener"> (show)</a> <!-- show-methods failed suite-TestNGListener -->
-                    </span>
-                    <div class="method-list-content failed suite-TestNGListener">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test1" class="method navigator-link" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestNGListener -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TestNGListener" class="hide-methods skipped suite-TestNGListener"> (hide)</a> <!-- hide-methods skipped suite-TestNGListener -->
-                      <a href="#" panel-name="suite-TestNGListener" class="show-methods skipped suite-TestNGListener"> (show)</a> <!-- show-methods skipped suite-TestNGListener -->
-                    </span>
-                    <div class="method-list-content skipped suite-TestNGListener">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test1" class="method navigator-link" hash-for-method="Quite">Quite</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TestNGListener -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,12 +102,12 @@
                     <div class="method-list-content passed suite-TestNGListener">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test1" class="method navigator-link" hash-for-method="logIn">logIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test1" class="method navigator-link" hash-for-method="openBrowser">openBrowser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test1" class="method navigator-link" hash-for-method="openBrowser">openBrowser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNGListener" title="TestCases.Test2" class="method navigator-link" hash-for-method="verifyLogInfunctionality">verifyLogInfunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestNGListener -->
@@ -150,59 +122,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestNGListener" class="panel TestNGListener">
-          <div class="suite-TestNGListener-class-failed">
+          <div class="suite-TestNGListener-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.Test1</span>
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Test2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logOut">
-                  </a> <!-- logOut -->
-                  <span class="method-name">logOut</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: null expected:&lt;[Mogal]&gt; but was:&lt;[Samrat]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at TestCases.Test1.logOut(Test1.java:43)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyLogInfunctionality">
+                  </a> <!-- verifyLogInfunctionality -->
+                  <span class="method-name">verifyLogInfunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNGListener-class-failed -->
-          <div class="suite-TestNGListener-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases.Test1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Quite">
-                  </a> <!-- Quite -->
-                  <span class="method-name">Quite</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping this exception
-	at TestCases.Test1.Quite(Test1.java:53)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNGListener-class-skipped -->
+          </div> <!-- suite-TestNGListener-class-passed -->
           <div class="suite-TestNGListener-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">TestCases.Test1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logIn">
-                  </a> <!-- logIn -->
-                  <span class="method-name">logIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="openBrowser">
@@ -215,7 +155,7 @@
         </div> <!-- panel TestNGListener -->
         <div panel-name="test-xml-TestNGListener" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\NewWorkSpace\mavenproject\testng.xml</span>
+            <span class="header-content">C:\Users\Mogalaiah Gannepaka\git\SeleniumJavaFramework\mavenproject\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,11 +165,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;TestNGListeners.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.Test1&quot;/&gt;
+      &lt;class name=&quot;TestCases.Test2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- TestNGListener --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,7 +182,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,28 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openBrowser')
-data.setCell(0, 2, 'TestCases.Test1')
-data.setCell(0, 3, 6616);
+data.setCell(0, 1, 'verifyLogInfunctionality')
+data.setCell(0, 2, 'TestCases.Test2')
+data.setCell(0, 3, 7963);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Quite')
+data.setCell(1, 1, 'openBrowser')
 data.setCell(1, 2, 'TestCases.Test1')
-data.setCell(1, 3, 940);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logIn')
-data.setCell(2, 2, 'TestCases.Test1')
-data.setCell(2, 3, 11);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'logOut')
-data.setCell(3, 2, 'TestCases.Test1')
-data.setCell(3, 3, 10);
+data.setCell(1, 3, 3952);
 window.suiteTableData['TestNGListener']= { tableData: data, tableDiv: 'times-div-TestNGListener'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-TestNGListener">
               </div> <!-- times-div-TestNGListener -->
             </div> <!-- times-div -->
@@ -319,27 +252,68 @@ return data;
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">intiateBrowser</span>
+                <span class="method-start">127 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">intiateBrowser</span>
+                <span class="method-start">3057 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">426 ms</span>
+                <span class="method-start">5213 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">logIn</span>
-                <span class="method-start">7747 ms</span>
+                <span class="method-name">verifyLogInfunctionality</span>
+                <span class="method-start">17429 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">logOut</span>
-                <span class="method-start">8439 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Quite</span>
-                <span class="method-start">8952 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">25637 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">26314 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endExtend</span>
-                <span class="method-start">9980 ms</span>
+                <span class="method-start">26368 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endExtend</span>
+                <span class="method-start">26643 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

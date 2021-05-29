@@ -4,15 +4,16 @@
 	<listeners>
 		<listener class-name="TestNGListeners.Listeners"></listener>
 	</listeners>
-	<test thread-count="5" name="Test1">
+	<test thread-count="1" name="Test">
 		<classes>
-			<class name="TestCases.Test1">
-			<methods>
-				<!-- <include name="logIn" /> -->
-				<!-- <exclude name="logOut" /> -->
-			</methods>
-			</class>
-
+			<class name="TestCases.Test1"/> 
+			<class name="TestCases.Test2"/>
+			
+<!-- 			<methods>
+				<include name="logIn" />
+				<exclude name="logOut" />
+			</methods> -->
 		</classes>
+		
 	</test> <!-- Test1 -->
 </suite> <!-- TestNGListener -->

@@ -5,7 +5,9 @@ import java.util.Date;
 
 import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ExtentReports.GenerateExtentReport;
@@ -13,6 +15,7 @@ import Pages.ReusableMethods;
 import junit.framework.Assert;
 
 public class Test1 {
+
 	ReusableMethods reusable = new ReusableMethods();
 
 	@BeforeSuite
@@ -25,10 +28,20 @@ public class Test1 {
 		GenerateExtentReport.endExtent();
 	}
 
+	@BeforeTest
+	public void intiateBrowser() {
+		reusable.incilizeBrowser("chrome");
+	}
+
+	@AfterTest
+	public void quitDriver() {
+		reusable.quiteDriver();
+	}
+
 	@Test(priority = 1)
 	public void openBrowser() {
-
-		reusable.navigateToLogInPage("chrome");
+		String URL = "https://www.google.com/";
+		reusable.navigateToLogInPage(URL);
 		System.out.println("Appllication is Open Successfull");
 	}
 
@@ -45,14 +58,14 @@ public class Test1 {
 	}
 
 	@Test(priority = 4)
-	public void Quite() {
+	public void closeBrowser() {
 		System.out.println("Quite Driver Successfull");
-		reusable.quiteDriver();	
+		reusable.closeBrowser();
 		String str = "";
 		if (str.isBlank()) {
 			throw new SkipException("Skipping this exception");
 		}
-		
+
 	}
 
 }

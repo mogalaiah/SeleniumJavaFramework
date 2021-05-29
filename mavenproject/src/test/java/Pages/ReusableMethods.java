@@ -13,6 +13,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import ExtentReports.GenerateExtentReport;
 
 
 public class ReusableMethods {
@@ -39,12 +43,11 @@ public class ReusableMethods {
 		}
 	}
 
-	public void navigateToLogInPage(String DriverName) {
-		incilizeBrowser(DriverName);
+	public void navigateToLogInPage(String URL) {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.google.com/");
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.get(URL);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println(driver.getTitle());
 		if (!driver.getTitle().isEmpty()) {
 			System.out.println("Login page is Displayed");
@@ -148,7 +151,7 @@ public class ReusableMethods {
 
 	public void quiteDriver() {
 		driver.quit();
-		System.out.println("Driver is closed");
+		System.out.println("Driver is Quited");
 	}
 	
 	public void navigateToBackHomePage() {
