@@ -44,6 +44,7 @@ public class ReusableMethods {
 	}
 
 	public void navigateToLogInPage(String URL) {
+		incilizeBrowser("Chrome"); 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(URL);
