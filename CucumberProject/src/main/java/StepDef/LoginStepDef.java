@@ -1,43 +1,41 @@
 package StepDef;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import Pages.LoginPage;
-import Pages.ReusableMethods;
+import Utility.BaseClass;
 import cucumber.api.java.en.*;
 
-
 public class LoginStepDef {
-	public WebDriver driver;
-	ReusableMethods _reusable = new ReusableMethods();
-	LoginPage _loginPage;
 	
-	@Given("^user lunch chrome browser$")
-	public void user_lunch_chrome_browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user")+"//Drivers//chromedriver.exe");
-		driver = new ChromeDriver();
-		_loginPage = new LoginPage(driver);
-	}
-	
-	
+	public LoginPage _loginPage = new LoginPage(BaseClass.driver);;
+
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
-	public void user_Navigate_to_URL(String URL) throws Throwable {
-		driver.get(URL);		
+	public void user_Navigate_to_URL(String URL) {
+	
 	}
 
-	@When("^user enter userName as (\\d+) and password as Guru(\\d+)$")
-	public void user_enter_userName_as_and_password_as_Guru(String userName, String passWord) throws Throwable {
+	@When("^user enter userName as \"([^\"]*)\" and passWord as \"([^\"]*)\"$")
+	public void user_enter_userName_as_and_passWord_as(String userName, String passWord) {
 		_loginPage.enterUserNameAndPassword(userName, passWord);
 	}
 
 	@When("^user click on submit button$")
-	public void user_click_on_submit_button() throws Throwable {
+	public void user_click_on_submit_button() {
 		_loginPage.clickOnSubmitButton();
 	}
 
 	@Then("^user verify home page as \"([^\"]*)\" is displayed$")
-	public void user_verify_home_page_as_is_displayed(String pageTitle) throws Throwable {
-		_loginPage.verifyHomePage(pageTitle);
+	public void user_verify_home_page_as_is_displayed(String pageTitle) {
+		_loginPage.verifyLoginPageTitle(pageTitle);
 	}
+
+	@When("^user click on logOut from Application$")
+	public void user_click_on_logOut_from_Application() {
+		_loginPage.clickOnLogOutbutton();
+	}
+
+	@When("^user close the browser$")
+	public void user_close_the_browser() throws Throwable {
+		_loginPage.closebrowser();
+	}
+
 }

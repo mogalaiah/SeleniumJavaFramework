@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -44,7 +45,7 @@ public class ReusableMethods {
 	}
 
 	public void navigateToLogInPage(String URL) {
-		incilizeBrowser("Chrome"); 
+		//incilizeBrowser("Chrome"); 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(URL);
