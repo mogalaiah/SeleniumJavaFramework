@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import Utility.BaseClass;
+
 public class DemoSitePage {
 	public WebDriver driver;
 
@@ -48,6 +50,7 @@ public class DemoSitePage {
 		String actualTitle = labelLitleText.getText();
 		System.out.println(expectedTitle + "  " + actualTitle);
 		Assert.assertEquals(expectedTitle, actualTitle);
+		BaseClass.logger.info("Actual Title Is: "+ actualTitle + "And"+" Actual Title Is: "+expectedTitle);
 	}
 
 	public void clickOnMinistatementLink() {
@@ -58,9 +61,11 @@ public class DemoSitePage {
 		if (labelMinistementform.isDisplayed()) {
 			System.out.println("Mini Statement Form Is Displayed");
 			Assert.assertTrue(true);
+			BaseClass.logger.info("Mini Statement Is Displayed");
 		} else {
 			System.out.println("Mini Statement Form Is Not Displayed");
 			Assert.assertTrue(false);
+			BaseClass.logger.info("Mini Statement Form Is Not Displayed");
 		}
 	}
 
@@ -76,9 +81,11 @@ public class DemoSitePage {
 		if (labelTransactionList.isDisplayed()) {
 			System.out.println("Transaction List Is Displayed");
 			Assert.assertTrue(true);
+			BaseClass.logger.info("Transaction List Is Displayed");
 		} else {
 			System.out.println("Transaction List Is Not Displayed");
 			Assert.assertTrue(false);
+			BaseClass.logger.info("Transaction List Is Not Displayed");
 		}
 	}
 

@@ -1,5 +1,6 @@
 package Pages;
 
+import org.codehaus.plexus.logging.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -51,16 +52,19 @@ public class LoginPage{
 	public void verifyLoginPageTitle(String expectedTitle) {
 		String actualTitle = titleText.getText();
 		Assert.assertEquals(expectedTitle, actualTitle);
+		BaseClass.logger.info("Page Title Is Verified As: "+actualTitle);
 	}
 
 	public void clickOnLogOutbutton() {
 		linkLogOut.click();
 		System.out.println("LogOut Successfully From Application");
 		driver.switchTo().alert().accept();
+		BaseClass.logger.info("Logged Out From Application");
 	}
 
 	public void closebrowser() {
 		driver.close();
+		BaseClass.logger.info("chrome browser is closed");
 	}
 
 }
