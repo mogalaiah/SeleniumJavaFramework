@@ -6,10 +6,10 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import Utility.BaseClass;
 
-public class LoginPage{
+public class LoginPage {
 
 	public WebDriver driver;
 
@@ -38,6 +38,10 @@ public class LoginPage{
 	@FindBy(xpath = "//a[@href='Logout.php']")
 	@CacheLookup
 	WebElement linkLogOut;
+	
+	public void navigateToURL(String URL) {
+		driver.get(URL);
+	}
 
 	public void enterUserNameAndPassword(String userName, String passWord) {
 		user99GuruName.sendKeys(userName);
@@ -51,19 +55,19 @@ public class LoginPage{
 	public void verifyLoginPageTitle(String expectedTitle) {
 		String actualTitle = titleText.getText();
 		Assert.assertEquals(expectedTitle, actualTitle);
-		BaseClass.logger.info("Page Title Is Verified As: "+actualTitle);
+		//BaseClass.logger.info("Page Title Is Verified As: "+actualTitle);
 	}
 
 	public void clickOnLogOutbutton() {
 		linkLogOut.click();
 		System.out.println("LogOut Successfully From Application");
 		driver.switchTo().alert().accept();
-		BaseClass.logger.info("Logged Out From Application");
+		//BaseClass.logger.info("Logged Out From Application");
 	}
 
 	public void closebrowser() {
 		driver.close();
-		BaseClass.logger.info("chrome browser is closed");
+		//BaseClass.logger.info("chrome browser is closed");
 	}
 
 }
