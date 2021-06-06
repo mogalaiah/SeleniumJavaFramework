@@ -1,10 +1,8 @@
 package StepDef;
 
-import org.testng.annotations.Test;
 import Pages.DomiSitePage;
 import Utility.BaseClass;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.*;
 
 public class DemoSiteStepDef {
 
