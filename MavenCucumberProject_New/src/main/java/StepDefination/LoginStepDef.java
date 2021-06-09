@@ -1,17 +1,18 @@
-package StepDef;
+package StepDefination;
 
 import Pages.LoginPage;
 import Utility.BaseClass;
 import cucumber.api.java.en.*;
 
-
 public class LoginStepDef {
+	
+
 	
 	public LoginPage _loginPage = new LoginPage(BaseClass.driver);;
 
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {
-	
+		_loginPage.openURL(URL);
 	}
 
 	@When("^user enter userName as \"([^\"]*)\" and passWord as \"([^\"]*)\"$")

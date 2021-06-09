@@ -1,8 +1,10 @@
 @Regression,Smoke
 Feature: Login Functionality
 
-  Scenario: Login With Valid UserName and Password
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+	Background: Login Functionality Through Background Keyword
+	   Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+
+  Scenario: Login With Valid UserName and Password 
     When user enter userName as "1303" and passWord as "Guru99"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
@@ -10,7 +12,6 @@ Feature: Login Functionality
     When user close the browser
 
   Scenario Outline: Login With Valid UserName and Password
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
     When user enter userName as "<UserName>" and passWord as "<PassWord>"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed

@@ -1,11 +1,18 @@
-package Runner;
 
-import io.cucumber.junit.CucumberOptions;
-import io.cucumber.junit.Cucumber;
-import org.junit.runner.RunWith;
-
-@RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber-report.html"})
-public class RunnerClass {
-}
-
+  package Runner;
+  
+  import org.junit.runner.RunWith; 
+  import cucumber.api.CucumberOptions; 
+  import cucumber.api.junit.Cucumber;
+  
+  
+  @RunWith(Cucumber.class)  
+  @CucumberOptions(features=".//Feature/Login.feature",
+			glue="StepDef",
+			dryRun=false,
+			monochrome=true,
+			plugin = {"pretty"})
+  public class RunnerClass {
+  
+  }
+ 
