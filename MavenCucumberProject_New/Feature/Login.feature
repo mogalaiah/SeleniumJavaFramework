@@ -6,7 +6,7 @@ Feature: Login Functionality
 
   Scenario: Login With Valid UserName and Password 
     When user enter userName as "1303" and passWord as "Guru99"
-    When user click on submit button
+    When user click on submit button++
     Then user verify home page as "Guru99 Bank" is displayed
     When user click on logOut from Application
     When user close the browser

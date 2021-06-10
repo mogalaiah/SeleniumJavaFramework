@@ -1,8 +1,9 @@
 @Regression,Smoke
 Feature: MiniStatment Functionality
 
-  Scenario Outline: Verify MiniStatment Is Display
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+  Background: MiniStatment Validation through Background keyword
+	   Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+  Scenario Outline: Verify MiniStatment Is Display 
     When user enter userName as "1303" and passWord as "Guru99"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
@@ -12,7 +13,6 @@ Feature: MiniStatment Functionality
     When user close the browser
 
   Scenario Outline: Verify MiniStatment Is Display With Data Driven
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
     When user enter userName as "<UserName>" and passWord as "<PassWord>"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
