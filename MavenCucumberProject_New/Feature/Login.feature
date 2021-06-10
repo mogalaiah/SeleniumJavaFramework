@@ -1,7 +1,7 @@
 @Regression,Smoke
 Feature: Login Functionality
 
-	Background: Login Functionality Through Background Keyword
+	Background: Login Functionality Through Background Keyword 
 	   Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
 
   Scenario: Login With Valid UserName and Password 
