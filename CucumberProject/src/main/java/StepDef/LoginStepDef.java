@@ -6,11 +6,11 @@ import cucumber.api.java.en.*;
 
 public class LoginStepDef {
 	
-	public LoginPage _loginPage = new LoginPage(BaseClass.driver);;
-
+	LoginPage _loginPage = new LoginPage(BaseClass.driver);
+	
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {
-	
+		_loginPage.openURL(URL);
 	}
 
 	@When("^user enter userName as \"([^\"]*)\" and passWord as \"([^\"]*)\"$")
@@ -36,6 +36,7 @@ public class LoginStepDef {
 	@When("^user close the browser$")
 	public void user_close_the_browser() throws Throwable {
 		_loginPage.closebrowser();
+		
 	}
-
+	
 }

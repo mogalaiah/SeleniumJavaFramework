@@ -2,16 +2,18 @@ package StepDefination;
 
 import Pages.LoginPage;
 import Utility.BaseClass;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 
 public class LoginStepDef {
-	
 
-	
-	public LoginPage _loginPage = new LoginPage(BaseClass.driver);;
+	LoginPage _loginPage = new LoginPage(BaseClass.driver);
+	BaseClass baseClass = new BaseClass();
 
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {
+		baseClass.incilizeBrowser();
 		_loginPage.openURL(URL);
 	}
 
@@ -38,6 +40,8 @@ public class LoginStepDef {
 	@When("^user close the browser$")
 	public void user_close_the_browser() throws Throwable {
 		_loginPage.closebrowser();
+		baseClass.quiteDriver();
+
 	}
 
 }

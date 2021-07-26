@@ -1,9 +1,10 @@
 @Regression,Smoke
 Feature: Transaction List Functionality
 
-  @Regression
+  Background: Transaction List Validation through Background keyword
+	   Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+
   Scenario: Verify Transaction List Is Displayed
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
     When user enter userName as "1303" and passWord as "Guru99"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
@@ -15,9 +16,7 @@ Feature: Transaction List Functionality
     Then user click on logOut from Application
     When user close the browser
 
-  @Regression
   Scenario Outline: Verify Transaction List Is Displayed With Data Driven
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
     When user enter userName as "<UserName>" and passWord as "<PassWord>"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed

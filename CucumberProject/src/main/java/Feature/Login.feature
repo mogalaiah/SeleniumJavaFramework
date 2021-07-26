@@ -1,25 +1,20 @@
 @Regression,Smoke
-Feature: MiniStatment Functionality
+Feature: Login Functionality
 
-  @Regression
-  Scenario Outline: Verify MiniStatment Is Display
+  Background: Login Functionality Through Background Keyword
     Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+
+  Scenario: Login With Valid UserName and Password
     When user enter userName as "1303" and passWord as "Guru99"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
-    When user click on Ministatement link
-    Then user verify Ministatement Form is displayed
-    Then user click on logOut from Application
+    When user click on logOut from Application
     When user close the browser
 
-  @Regression
-  Scenario Outline: Verify MiniStatment Is Display With Data Driven
-    Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"
+  Scenario Outline: Login With Valid UserName and Password with Data Driven
     When user enter userName as "<UserName>" and passWord as "<PassWord>"
     When user click on submit button
     Then user verify home page as "Guru99 Bank" is displayed
-    When user click on Ministatement link
-    Then user verify Ministatement Form is displayed
     Then user click on logOut from Application
     When user close the browser
 
