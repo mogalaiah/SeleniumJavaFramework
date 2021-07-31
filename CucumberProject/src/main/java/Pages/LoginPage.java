@@ -48,7 +48,7 @@ public class LoginPage {
 	public void enterUserNameAndPassword(String userName, String passWord) {
 		user99GuruName.sendKeys(userName);
 		password99Guru.sendKeys(passWord);
-		log.info("User Entered UserName and Password Successfully");
+		//log.info("User Entered UserName and Password Successfully");
 	}
 
 	public void clickOnSubmitButton() {
@@ -58,19 +58,19 @@ public class LoginPage {
 	public void verifyLoginPageTitle(String expectedTitle) {
 		String actualTitle = titleText.getText();
 		Assert.assertEquals(expectedTitle, actualTitle);
-		log.info("Page Title Is Verified As: " + actualTitle);
+		//log.info("Page Title Is Verified As: " + actualTitle);
 	}
 
 	public void clickOnLogOutbutton() {
 		linkLogOut.click();
-		System.out.println("LogOut Successfully From Application");
+		//System.out.println(" LogOut Successfully From Application");
 		driver.switchTo().alert().accept();
-		log.info("Logged Out From Application");
+		//log.info("Logged Out From Application");
 	}
 
 	public void closebrowser() {
 		driver.close();
-		log.info("chrome browser is closed");
+		//log.info("chrome browser is closed");
 	}
 
 }
