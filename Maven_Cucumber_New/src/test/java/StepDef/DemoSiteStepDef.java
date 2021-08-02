@@ -3,6 +3,7 @@ package StepDef;
 import Pages.DemoSitePage;
 import Utility.DriverFactory;
 import io.cucumber.java.en.*;
+import junit.framework.Assert;
 
 
 public class DemoSiteStepDef {
@@ -16,7 +17,9 @@ public class DemoSiteStepDef {
 
 	@Then("^user verify Ministatement Form is displayed$")
 	public void user_verify_Ministatement_Form_is_displayed() {
-		_demoSitePage.verifyMiniStatementFormDislayed();
+		Boolean flag;
+		flag=_demoSitePage.verifyMiniStatementFormDislayed();
+		Assert.assertTrue(flag);
 	}
 
 	@When("^user select account number from account dropdown list$")
@@ -31,7 +34,9 @@ public class DemoSiteStepDef {
 
 	@Then("^user verify transaction list is displayed$")
 	public void user_verify_transaction_list_is_displayed() {
-		_demoSitePage.verifyTrasactionListIsDisplayed();
+		Boolean flag;
+		flag=_demoSitePage.verifyTrasactionListIsDisplayed();
+		Assert.assertTrue(flag);
 	}
 
 }

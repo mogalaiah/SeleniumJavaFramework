@@ -7,6 +7,7 @@ import Pages.LoginPage;
 import Utility.DriverFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
+import junit.framework.Assert;
 
 
 public class LoginStepDef{
@@ -43,8 +44,9 @@ public class LoginStepDef{
 	}
 
 	@Then("^user verify home page as \"([^\"]*)\" is displayed$")
-	public void user_verify_home_page_as_is_displayed(String pageTitle) {
-		_loginPage.verifyLoginPageTitle(pageTitle);
+	public void user_verify_home_page_as_is_displayed(String actualTitle) {
+		String expectedTitle= _loginPage.verifyHomePageTitle();
+		Assert.assertEquals(expectedTitle, actualTitle);
 	}
 
 	@When("^user click on logOut from Application$")

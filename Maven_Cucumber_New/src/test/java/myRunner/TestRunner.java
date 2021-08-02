@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/Feature/Login.feature"} 
 		, glue = {"StepDef","Hooks"}
-		, dryRun = false
+		, dryRun = true
 		, monochrome = true
 		, plugin = {"pretty"}
 )

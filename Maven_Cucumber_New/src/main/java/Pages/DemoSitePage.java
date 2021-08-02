@@ -45,28 +45,19 @@ public class DemoSitePage {
 	@CacheLookup
 	private WebElement labelTransactionList;
 
-	public void verifyHomePageTitle(String expectedTitle) {
-		String actualTitle = labelLitleText.getText();
-		System.out.println(expectedTitle + "  " + actualTitle);
-		Assert.assertEquals(expectedTitle, actualTitle);
-		// BaseClass.logger.info("Actual Title Is: "+ actualTitle + "And"+" Actual Title
-		// Is: "+expectedTitle);
-	}
 
 	public void clickOnMinistatementLink() {
 		linkMiniStatement.click();
 	}
 
-	public void verifyMiniStatementFormDislayed() {
+	public Boolean verifyMiniStatementFormDislayed() {
+		Boolean flag;
 		if (labelMinistementform.isDisplayed()) {
-			System.out.println("Mini Statement Form Is Displayed");
-			Assert.assertTrue(true);
-			// BaseClass.logger.info("Mini Statement Is Displayed");
+			flag=true;
 		} else {
-			System.out.println("Mini Statement Form Is Not Displayed");
-			Assert.assertTrue(false);
-			// BaseClass.logger.info("Mini Statement Form Is Not Displayed");
+			flag=false;
 		}
+		return flag;
 	}
 
 	public void selectAccountNumberFromDropdown(String accountnmber) {
@@ -77,16 +68,14 @@ public class DemoSitePage {
 		buttonAccSubmit.click();
 	}
 
-	public void verifyTrasactionListIsDisplayed() {
+	public Boolean verifyTrasactionListIsDisplayed() {
+		Boolean flag;
 		if (labelTransactionList.isDisplayed()) {
-			System.out.println("Transaction List Is Displayed");
-			Assert.assertTrue(true);
-			// BaseClass.logger.info("Transaction List Is Displayed");
+			flag=true;
 		} else {
-			System.out.println("Transaction List Is Not Displayed");
-			Assert.assertTrue(false);
-			// BaseClass.logger.info("Transaction List Is Not Displayed");
+			flag=false;
 		}
+		return flag;		
 	}
 
 }

@@ -5,10 +5,8 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import Utility.ConfigReader;
 import Utility.DriverFactory;
-import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.*;
 
 
