@@ -1,13 +1,13 @@
 package StepDef;
 
 import Pages.DemoSitePage;
-import Utility.BaseClass;
+import Utility.DriverFactory;
 import io.cucumber.java.en.*;
 
 
 public class DemoSiteStepDef {
 
-	DemoSitePage _demoSitePage = new DemoSitePage(BaseClass.driver);
+	DemoSitePage _demoSitePage = new DemoSitePage(DriverFactory.getDriver());
 
 	@When("^user click on Ministatement link$")
 	public void user_click_on_Ministatement_link() {

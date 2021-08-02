@@ -5,16 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.log4testng.Logger;
 
-import Utility.BaseClass;
+
+import Utility.DriverFactory;
+import junit.framework.Assert;
 
 
 public class LoginPage {
 
 	public WebDriver driver;
-	public static final Logger log  = Logger.getLogger(BaseClass.class);
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -23,23 +22,23 @@ public class LoginPage {
 
 	@FindBy(name = "uid")
 	@CacheLookup
-	WebElement user99GuruName;
+	private WebElement user99GuruName;
 
 	@FindBy(name = "password")
 	@CacheLookup
-	WebElement password99Guru;
+	private WebElement password99Guru;
 
 	@FindBy(className = "barone")
 	@CacheLookup
-	WebElement titleText;
+	private WebElement titleText;
 
 	@FindBy(name = "btnLogin")
 	@CacheLookup
-	WebElement login;
+	private WebElement login;
 
 	@FindBy(xpath = "//a[@href='Logout.php']")
 	@CacheLookup
-	WebElement linkLogOut;
+	private WebElement linkLogOut;
 
 	public void openURL(String URL) {
 		driver.get(URL);

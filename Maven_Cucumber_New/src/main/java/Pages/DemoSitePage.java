@@ -6,8 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import Utility.BaseClass;
+import Utility.DriverFactory;
+import junit.framework.Assert;
 
 public class DemoSitePage {
 	public WebDriver driver;
@@ -19,31 +19,31 @@ public class DemoSitePage {
 
 	@FindBy(xpath = "//div[@id='site-name']//a")
 	@CacheLookup
-	WebElement labelLitleText;
+	private WebElement labelLitleText;
 
 	@FindBy(xpath = "//a[@href='MiniStatementInput.php']")
 	@CacheLookup
-	WebElement linkMiniStatement;
+	private WebElement linkMiniStatement;
 
 	@FindBy(name = "accountno")
 	@CacheLookup
-	WebElement selectAccountNo;
+	private WebElement selectAccountNo;
 
 	@FindBy(name = "AccSubmit")
 	@CacheLookup
-	WebElement buttonAccSubmit;
+	private WebElement buttonAccSubmit;
 
 	@FindBy(name = "res")
 	@CacheLookup
-	WebElement buttonReset;
+	private WebElement buttonReset;
 
 	@FindBy(xpath = "//p[text()='Mini Statement Form']")
 	@CacheLookup
-	WebElement labelMinistementform;
+	private WebElement labelMinistementform;
 
 	@FindBy(xpath = "//p[contains(text(),'Last Three Transaction Details for Account No:')]")
 	@CacheLookup
-	WebElement labelTransactionList;
+	private WebElement labelTransactionList;
 
 	public void verifyHomePageTitle(String expectedTitle) {
 		String actualTitle = labelLitleText.getText();

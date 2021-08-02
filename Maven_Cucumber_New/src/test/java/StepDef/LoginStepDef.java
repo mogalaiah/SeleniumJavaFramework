@@ -1,13 +1,13 @@
 package StepDef;
 
 import Pages.LoginPage;
-import Utility.BaseClass;
+import Utility.DriverFactory;
 import io.cucumber.java.en.*;
 
 
-public class LoginStepDef {
+public class LoginStepDef{
 	
-	LoginPage _loginPage = new LoginPage(BaseClass.driver);
+	LoginPage _loginPage = new LoginPage(DriverFactory.getDriver());
 	
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {
