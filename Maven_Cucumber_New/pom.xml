@@ -52,17 +52,16 @@
 			<version>3.141.59</version>
 		</dependency>
 
-
 		<dependency>
-			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-reporting</artifactId>
-			<version>5.5.3</version>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 
 		<dependency>
-			<groupId>net.masterthought</groupId>
-			<artifactId>maven-cucumber-reporting</artifactId>
-			<version>5.5.0</version>
+			<groupId>com.github.yev</groupId>
+			<artifactId>screenshot</artifactId>
+			<version>0.2</version>
 		</dependency>
 	</dependencies>
 
