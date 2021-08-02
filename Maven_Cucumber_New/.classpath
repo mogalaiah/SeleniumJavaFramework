@@ -29,14 +29,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/cucumber-core-2.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/cucumber-html-0.2.6.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/cucumber-java-1.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/cucumber-junit-2.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/cucumber-jvm-deps-1.0.6.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/gherkin-5.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/tag-expressions-1.0.1.jar"/>
-	<classpathentry kind="lib" path="D:/SeleniumJar/jar_files/junit-4.12.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

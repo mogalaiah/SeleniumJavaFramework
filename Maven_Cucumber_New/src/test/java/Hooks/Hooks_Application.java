@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import Utility.ConfigReader;
 import Utility.DriverFactory;
+import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.*;
 
 
@@ -30,6 +31,7 @@ public class Hooks_Application {
 		driver=driverFactory.incilizeBrowser(browserName);
 	}
 	
+
 	@After(order=0)
 	public void quitBrowser() {
 		driver.quit();
@@ -40,6 +42,7 @@ public class Hooks_Application {
 		if(scenario.isFailed()) {
 			String scenarioName = scenario.getName().replace(" ", "_");
 			byte[] sourcepath=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);	
+			scenario.attach(sourcepath, "image/png", scenarioName);
 			System.out.println(scenarioName);
 		}
 		

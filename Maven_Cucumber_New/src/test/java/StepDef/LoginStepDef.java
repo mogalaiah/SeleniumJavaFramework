@@ -1,7 +1,11 @@
 package StepDef;
 
+import java.util.List;
+import java.util.Map;
+
 import Pages.LoginPage;
 import Utility.DriverFactory;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
 
@@ -11,12 +15,26 @@ public class LoginStepDef{
 	
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {
-		_loginPage.openURL(URL);
+		DriverFactory.getDriver().get(URL);
 	}
 
 	@When("^user enter userName as \"([^\"]*)\" and passWord as \"([^\"]*)\"$")
 	public void user_enter_userName_as_and_passWord_as(String userName, String passWord) {
 		_loginPage.enterUserNameAndPassword(userName, passWord);
+	}
+	
+	@When("user enter userName and passWord")
+	public void user_enter_user_name_and_pass_word(DataTable dataTable) {
+		 List<Map<String, String>> rows = dataTable.asMaps(String.class, String.class);
+	    
+	    for (Map<String, String> columns : rows) {
+	    	if(columns.get("UserName")!="") {
+	    		_loginPage.userEnterUserName(columns.get("UserName"));
+	    	}
+	    	if(columns.get("PassWord")!="") {
+	    		_loginPage.userEnterPassWord(columns.get("PassWord"));
+	    	}
+	    }
 	}
 
 	@When("^user click on submit button$")
@@ -39,5 +57,6 @@ public class LoginStepDef{
 		_loginPage.closebrowser();
 		
 	}
+	
 	
 }
