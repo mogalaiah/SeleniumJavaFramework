@@ -1,4 +1,4 @@
-package ExtentReports;
+/*package ExtentReports;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -16,12 +16,13 @@ public class GenerateExtentReport {
 	public static ExtentHtmlReporter reporter;
 
 	public static void setExtent() {
-		reporter= new ExtentHtmlReporter(System.getProperty("user.dir") + "/MyReort/"+ "MyOwnReport_" + System.currentTimeMillis() + ".html");
+		reporter = new ExtentHtmlReporter(
+				System.getProperty("user.dir") + "/MyReort/" + "MyOwnReport_" + System.currentTimeMillis() + ".html");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Host Name: ", "localhost");
 		extent.setSystemInfo("Environment: ", "Dev");
-		extent.setSystemInfo("User Name: ", "Mogalaiah");		
+		extent.setSystemInfo("User Name: ", "Mogalaiah");
 	}
 
 	public static void endExtent() {
@@ -34,7 +35,7 @@ public class GenerateExtentReport {
 		String path = System.getProperty("user.dir") + "/Screenshot/" + System.currentTimeMillis() + ".png";
 		File destination = new File(path);
 		try {
-		FileUtils.copyFile(screenShot, destination);
+			FileUtils.copyFile(screenShot, destination);
 		} catch (Exception e) {
 			System.out.println("Error Message" + e.getMessage());
 		}
@@ -42,4 +43,4 @@ public class GenerateExtentReport {
 
 	}
 
-}
+}*/
