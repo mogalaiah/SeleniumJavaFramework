@@ -5,12 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.apache.log4j.Logger;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	public WebDriver driver;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	Logger log = Logger.getLogger(DriverFactory.class); 
 
 	public WebDriver incilizeBrowser(String browser) {
 		if (browser.equals("chrome")) {
@@ -24,6 +26,7 @@ public class DriverFactory {
 			tlDriver.set(new InternetExplorerDriver());
 		} else {
 			System.out.println("Please Pass the correct driver value: " + browser);
+			log.info("Please Pass the correct driver value: " + browser);
 		}
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();

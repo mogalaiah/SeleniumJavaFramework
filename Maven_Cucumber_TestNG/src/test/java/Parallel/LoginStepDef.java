@@ -3,6 +3,8 @@ package Parallel;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import Pages.LoginPage;
 import Utility.DriverFactory;
 import io.cucumber.datatable.DataTable;
@@ -13,6 +15,7 @@ import junit.framework.Assert;
 public class LoginStepDef{
 	
 	LoginPage _loginPage = new LoginPage(DriverFactory.getDriver());
+	Logger log = Logger.getLogger(LoginStepDef.class); 
 	
 	@Given("^user Navigate to URL \"([^\"]*)\"$")
 	public void user_Navigate_to_URL(String URL) {

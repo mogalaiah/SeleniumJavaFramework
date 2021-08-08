@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -11,6 +12,7 @@ import junit.framework.Assert;
 
 public class DemoSitePage {
 	public WebDriver driver;
+	Logger log = Logger.getLogger(DemoSitePage.class); 
 
 	public DemoSitePage(WebDriver driver) {
 		this.driver = driver;
@@ -54,8 +56,10 @@ public class DemoSitePage {
 		Boolean flag;
 		if (labelMinistementform.isDisplayed()) {
 			flag=true;
+			log.info("Mini Statement Form Is Dislayed");
 		} else {
 			flag=false;
+			log.info("Mini Statement Form Not Is Dislayed");
 		}
 		return flag;
 	}
@@ -72,8 +76,10 @@ public class DemoSitePage {
 		Boolean flag;
 		if (labelTransactionList.isDisplayed()) {
 			flag=true;
+			log.info("Transaction List Is Dislayed");
 		} else {
 			flag=false;
+			log.info("Transaction List Not Is Dislayed");
 		}
 		return flag;		
 	}

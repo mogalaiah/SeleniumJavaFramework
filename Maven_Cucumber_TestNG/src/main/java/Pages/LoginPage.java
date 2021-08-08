@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -12,6 +13,7 @@ import junit.framework.Assert;
 public class LoginPage {
 
 	public WebDriver driver;
+	Logger log = Logger.getLogger(LoginPage.class); 
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -63,6 +65,7 @@ public class LoginPage {
 	public void clickOnLogOutbutton() {
 		linkLogOut.click();
 		driver.switchTo().alert().accept();
+		log.info("Accepted Aleart");
 	}
 
 	public void closebrowser() {
