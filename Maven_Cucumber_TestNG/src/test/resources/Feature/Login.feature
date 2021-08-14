@@ -17,7 +17,7 @@ Scenario: Login With Valid UserName and Password through Data Table
 		|UserName|PassWord|
 		|1303		 |Guru99  |
 	When user click on submit button 
-	Then user verify home page as "Guru99 Banks" is displayed 
+	Then user verify home page as "Guru99 Bank" is displayed 
 	When user click on logOut from Application 
 	When user close the browser 
 	
