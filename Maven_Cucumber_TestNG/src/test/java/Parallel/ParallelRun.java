@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = {"src/test/resources/Feature"} 
 		, glue = {"Parallel"}
 		, dryRun = false
-		, monochrome = true
+		, monochrome =true
 		, plugin = {"pretty","html:target/cucumber-reports.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/"}
 )
 
