@@ -13,6 +13,18 @@ Scenario: Verify MiniStatment Is Display
 	Then user click on logOut from Application 
 	When user close the browser 
 	
+@Regression,smoke 
+Scenario: Login With Valid UserName and Password through Data Table 
+	When user enter userName and passWord 
+		|UserName|PassWord|
+		|1303		 |Guru99  |
+	When user click on submit button 
+	Then user verify home page as "Guru99 Bank" is displayed 
+	When user click on Ministatement link 
+	Then user verify Ministatement Form is displayed 
+	Then user click on logOut from Application 
+	When user close the browser 
+	
 Scenario Outline: Verify MiniStatment Is Display With Data Driven 
 	When user enter userName as "<UserName>" and passWord as "<PassWord>" 
 	When user click on submit button 
