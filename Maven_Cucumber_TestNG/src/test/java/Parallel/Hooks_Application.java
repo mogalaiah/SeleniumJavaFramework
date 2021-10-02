@@ -1,5 +1,6 @@
 package Parallel;
 
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 import org.openqa.selenium.OutputType;
@@ -23,7 +24,7 @@ public class Hooks_Application {
 	}
 	
 	@Before(order=1)
-	public void lauchBrowser() {
+	public void lauchBrowser() throws MalformedURLException {
 		String browserName= prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver=driverFactory.incilizeBrowser(browserName);
@@ -35,15 +36,12 @@ public class Hooks_Application {
 		driver.quit();
 	}
 	
-	@After(order=1)
+	@BeforeStep(order=0)
 	public void takeScreenshot(Scenario scenario) {
-		if(scenario.isFailed()) {
 			String scenarioName = scenario.getName().replace(" ", "_");
 			byte[] sourcepath=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);	
 			scenario.attach(sourcepath, "image/png", scenarioName);
 			System.out.println(scenarioName);
-		}
-		
 	}
 
 }
