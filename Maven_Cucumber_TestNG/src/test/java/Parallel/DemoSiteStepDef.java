@@ -1,11 +1,12 @@
 package Parallel;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 
 import Pages.DemoSitePage;
 import Utility.DriverFactory;
 import io.cucumber.java.en.*;
-import junit.framework.Assert;
+
 
 
 public class DemoSiteStepDef {
@@ -23,7 +24,6 @@ public class DemoSiteStepDef {
 		Boolean flag;
 		flag=_demoSitePage.verifyMiniStatementFormDislayed();
 		Assert.assertTrue(flag);
-		log.info("Verified Minstatement Form is displayed");
 	}
 
 	@When("^user select account number from account dropdown list$")
@@ -41,7 +41,6 @@ public class DemoSiteStepDef {
 		Boolean flag;
 		flag=_demoSitePage.verifyTrasactionListIsDisplayed();
 		Assert.assertTrue(flag);
-		log.info("Verified Trasaction List is displayed");
 	}
 
 }

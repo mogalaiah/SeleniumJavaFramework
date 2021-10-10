@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-02T16:01:09Z" name="Default suite" finished-at="2021-10-02T16:03:50Z" duration-ms="160920">
+  <suite started-at="2021-10-10T07:19:03Z" name="Default suite" finished-at="2021-10-10T07:22:02Z" duration-ms="179509">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-10-02T16:01:09Z" name="Default test" finished-at="2021-10-02T16:03:50Z" duration-ms="160920">
+    <test started-at="2021-10-10T07:19:03Z" name="Default test" finished-at="2021-10-10T07:22:02Z" duration-ms="179509">
       <class name="Parallel.ParallelRun">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:09Z" name="setUpClass" finished-at="2021-10-02T16:01:10Z" duration-ms="827" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:03Z" name="setUpClass" finished-at="2021-10-10T07:19:03Z" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:00Z" duration-ms="50452" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:03Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:19:14Z" duration-ms="11090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,47 +27,26 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir17548_2089959775}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64998}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 0681d50e46d48e29032e6dd27f1e41b8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir17548_2089959775}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64998}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 0681d50e46d48e29032e6dd27f1e41b8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:01Z" duration-ms="50679" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:14Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:19:25Z" duration-ms="10229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login With Valid UserName and Password through Data Table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:25Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:19:35Z" duration-ms="10582" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -80,100 +59,10 @@ at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannep
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir10148_1019999491}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64996}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f9c80388483929beeb0319d317ebb653]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir10148_1019999491}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64996}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f9c80388483929beeb0319d317ebb653
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:29)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:01Z" duration-ms="50772" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login With Valid UserName and Password through Data Table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Login Functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir9404_572192690}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64997}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 97f12378ae481dd720fe201a8a4ecaf5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir9404_572192690}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64997}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 97f12378ae481dd720fe201a8a4ecaf5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:21)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:03:00Z" duration-ms="110473" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:35Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:19:46Z" duration-ms="10990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,47 +75,10 @@ at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannep
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir2540_1788509869}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61544}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7277a76d0d2f44631d37c7393a17fcc0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir2540_1788509869}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61544}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7277a76d0d2f44631d37c7393a17fcc0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:10Z" duration-ms="60100" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:19:58Z" duration-ms="11799" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,56 +91,10 @@ at ✽.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannep
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir14572_426298009}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56092}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 86fd1b4bd8bd7572216afeb24d6c2b1e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir14572_426298009}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56092}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 86fd1b4bd8bd7572216afeb24d6c2b1e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:03:10Z" duration-ms="119666" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:19:58Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:20:10Z" duration-ms="11953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -301,56 +107,10 @@ at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir5200_1116125153}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58201}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7af96946cbdcbf280aa19ccf06ecca98
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir5200_1116125153}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58201}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7af96946cbdcbf280aa19ccf06ecca98
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:33)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:10Z" duration-ms="60190" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:20:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:20:22Z" duration-ms="11678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -363,56 +123,10 @@ at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir13572_1626198286}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64995}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 4f3a9aeb13735c635dd08a581f53febd
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir13572_1626198286}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64995}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 4f3a9aeb13735c635dd08a581f53febd
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/TransactionList.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:01:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-02T16:02:10Z" duration-ms="60144" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:20:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T07:20:33Z" duration-ms="11112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -425,56 +139,10 @@ at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir12700_258847733}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64994}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 6b7198541ef67a6d45146be8ded31a3e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir12700_258847733}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64994}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 6b7198541ef67a6d45146be8ded31a3e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-at ✽.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/TransactionList.feature:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Parallel.ParallelRun@7bba5817]" started-at="2021-10-02T16:03:10Z" name="tearDownClass" finished-at="2021-10-02T16:03:50Z" duration-ms="40394" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Parallel.ParallelRun@79e4c792]" started-at="2021-10-10T07:20:33Z" name="tearDownClass" finished-at="2021-10-10T07:22:02Z" duration-ms="89227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

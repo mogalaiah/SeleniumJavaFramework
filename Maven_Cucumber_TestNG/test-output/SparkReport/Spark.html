@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Execution Status Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 2, 2021 09:31:09 pm</span></a>
+<a href="#"><span class="badge badge-primary">Oct 10, 2021 12:49:03 pm</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 2, 2021 09:31:09 pm</h3>
+<h3>Oct 10, 2021 12:49:03 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 2, 2021 09:33:10 pm</h3>
+<h3>Oct 10, 2021 12:50:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>3</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>3</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>8</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='76%'><b>84</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>128</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>8</b> steps failed,
-<b>18</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Functionality":50.497,"MiniStatment Functionality":119.369,"Transaction List Functionality":59.888
+"Login Functionality":31.73,"MiniStatment Functionality":34.733,"Transaction List Functionality":22.769
 };
 </script>
 <div class="row">
@@ -177,36 +172,36 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Regression,smoke</td>
+<td>@Regression</td>
+<td>1</td>
 <td>0</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@Smoke</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression,smoke</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@Regression,Smoke</td>
-<td>0</td>
 <td>5</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@Regression</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -243,21 +238,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 3,
+passParent: 3,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 8,
+passChild: 8,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 84,
-failGrandChild: 8,
+passGrandChild: 128,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 18,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -271,7 +266,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -279,31 +274,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Regression,smoke</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression,Smoke</a><a class="dropdown-item" href="#">@Regression</a>
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression,smoke</a><a class="dropdown-item" href="#">@Regression,Smoke</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Login Functionality</p>
             <p class="text-sm">
-              <span>21:31:10 pm</span> / <span>30:50:497</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:49:04 pm</span> / <span>30:31:730</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login Functionality</h5>
-<span class='badge badge-success'>10.02.2021 21:31:10</span>
-<span class='badge badge-danger'>10.02.2021 21:32:01</span>
-<span class='badge badge-default'>30:50:497</span>
+<h5 class="test-status text-pass">Login Functionality</h5>
+<span class='badge badge-success'>10.10.2021 12:49:04</span>
+<span class='badge badge-danger'>10.10.2021 12:49:35</span>
+<span class='badge badge-default'>30:31:730</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -313,28 +308,250 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login With Valid UserName and Password with Data Driven</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login With Valid UserName and Password</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_Navigate_to_URL(java.lang.String)">
+                <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_userName_as_and_passWord_as(java.lang.String,java.lang.String)">
+                <span>When user enter userName as "1303" and passWord as "Guru99"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
+                <span>When user click on submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded4.png' src="../embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
+                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded5.png' src="../embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
+                <span>When user click on logOut from Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded6.png' src="../embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
+                <span>When user close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Login With Valid UserName and Password through Data Table</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded7.png' src="../embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_Navigate_to_URL(java.lang.String)">
+                <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded8.png' src="../embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_user_name_and_pass_word(io.cucumber.datatable.DataTable)">
+                <span>When user enter userName and passWord</span>
+      <div><table class='markup-table table '><tr><td>UserName</td><td>PassWord</td></tr><tr><td>1303</td><td>Guru99</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded9.png' src="../embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
+                <span>When user click on submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded10.png' src="../embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
+                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded11.png' src="../embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
+                <span>When user click on logOut from Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded12.png' src="../embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
+                <span>When user close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Login With Valid UserName and Password with Data Driven</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Login With Valid UserName and Password with Data Driven</div>
+                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Login With Valid UserName and Password with Data Driven</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_with_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded2.png' src="../embedded2.png">
+    <img data-featherlight='../embedded13.png' src="../embedded13.png">
     
     </div></div>
 </div>
@@ -366,7 +583,7 @@ eventsCount: 5,
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_with_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded23.png' src="../embedded23.png">
+    <img data-featherlight='../embedded15.png' src="../embedded15.png">
     
     </div></div>
 </div>
@@ -382,7 +599,7 @@ eventsCount: 5,
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_with_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded27.png' src="../embedded27.png">
+    <img data-featherlight='../embedded16.png' src="../embedded16.png">
     
     </div></div>
 </div>
@@ -398,68 +615,82 @@ eventsCount: 5,
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_with_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded35.png' src="../embedded35.png">
+    <img data-featherlight='../embedded17.png' src="../embedded17.png">
     
     </div></div>
 </div>
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
+                  <div class="step pass-bg">
                     <span>Then user click on logOut from Application</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir10148_1019999491}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64996}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f9c80388483929beeb0319d317ebb653
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-	at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-	at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-	at ?.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:29)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_with_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded18.png' src="../embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
                     <span>When user close the browser</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
               </div>
             </div>
         </div>
   </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">MiniStatment Functionality</p>
+            <p class="text-sm">
+              <span>12:49:35 pm</span> / <span>30:34:733</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">MiniStatment Functionality</h5>
+<span class='badge badge-success'>10.10.2021 12:49:35</span>
+<span class='badge badge-danger'>10.10.2021 12:50:10</span>
+<span class='badge badge-default'>30:34:733</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Login With Valid UserName and Password</div>
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Verify MiniStatment Is Display</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password
+      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded6.png' src="../embedded6.png">
+    <img data-featherlight='../embedded19.png' src="../embedded19.png">
     
     </div></div>
 </div>
@@ -473,9 +704,9 @@ Session ID: f9c80388483929beeb0319d317ebb653
               </div>
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password
+      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded13.png' src="../embedded13.png">
+    <img data-featherlight='../embedded20.png' src="../embedded20.png">
     
     </div></div>
 </div>
@@ -489,133 +720,7 @@ Session ID: f9c80388483929beeb0319d317ebb653
               </div>
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded20.png' src="../embedded20.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
-                <span>When user click on submit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded30.png' src="../embedded30.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
-                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded38.png' src="../embedded38.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
-                <span>When user click on logOut from Application</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir17548_2089959775}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64998}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 0681d50e46d48e29032e6dd27f1e41b8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-	at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-	at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-	at ?.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:11)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
-                <span>When user close the browser</span>
-      <div>Step skipped
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>Login With Valid UserName and Password through Data Table</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded4.png' src="../embedded4.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_Navigate_to_URL(java.lang.String)">
-                <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded11.png' src="../embedded11.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_user_name_and_pass_word(io.cucumber.datatable.DataTable)">
-                <span>When user enter userName and passWord</span>
-      <div><table class='markup-table table '><tr><td>UserName</td><td>PassWord</td></tr><tr><td>1303</td><td>Guru99</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
     <img data-featherlight='../embedded21.png' src="../embedded21.png">
     
@@ -631,9 +736,9 @@ Session ID: 0681d50e46d48e29032e6dd27f1e41b8
               </div>
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded31.png' src="../embedded31.png">
+    <img data-featherlight='../embedded22.png' src="../embedded22.png">
     
     </div></div>
 </div>
@@ -647,97 +752,87 @@ Session ID: 0681d50e46d48e29032e6dd27f1e41b8
               </div>
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded37.png' src="../embedded37.png">
+    <img data-featherlight='../embedded23.png' src="../embedded23.png">
     
     </div></div>
 </div>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
-                <span>When user click on logOut from Application</span>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_click_on_Ministatement_link()">
+                <span>When user click on Ministatement link</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir9404_572192690}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64997}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 97f12378ae481dd720fe201a8a4ecaf5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-	at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-	at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-	at ?.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Login.feature:21)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_MiniStatment_Is_Display
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded24.png' src="../embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed()">
+                <span>Then user verify Ministatement Form is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_MiniStatment_Is_Display
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded25.png' src="../embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
+                <span>Then user click on logOut from Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_MiniStatment_Is_Display
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded26.png' src="../embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
                 <span>When user close the browser</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
           </div>
         </div>
   </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">MiniStatment Functionality</p>
-            <p class="text-sm">
-              <span>21:31:10 pm</span> / <span>31:59:369</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">MiniStatment Functionality</h5>
-<span class='badge badge-success'>10.02.2021 21:31:10</span>
-<span class='badge badge-danger'>10.02.2021 21:33:10</span>
-<span class='badge badge-default'>31:59:369</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Login With Valid UserName and Password through Data Table</div>
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Login With Valid UserName and Password through Data Table</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded5.png' src="../embedded5.png">
+    <img data-featherlight='../embedded27.png' src="../embedded27.png">
     
     </div></div>
 </div>
@@ -753,7 +848,7 @@ Session ID: 97f12378ae481dd720fe201a8a4ecaf5
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded10.png' src="../embedded10.png">
+    <img data-featherlight='../embedded28.png' src="../embedded28.png">
     
     </div></div>
 </div>
@@ -771,7 +866,7 @@ Session ID: 97f12378ae481dd720fe201a8a4ecaf5
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded18.png' src="../embedded18.png">
+    <img data-featherlight='../embedded29.png' src="../embedded29.png">
     
     </div></div>
 </div>
@@ -787,7 +882,7 @@ Session ID: 97f12378ae481dd720fe201a8a4ecaf5
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded28.png' src="../embedded28.png">
+    <img data-featherlight='../embedded30.png' src="../embedded30.png">
     
     </div></div>
 </div>
@@ -803,7 +898,7 @@ Session ID: 97f12378ae481dd720fe201a8a4ecaf5
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded39.png' src="../embedded39.png">
+    <img data-featherlight='../embedded31.png' src="../embedded31.png">
     
     </div></div>
 </div>
@@ -818,160 +913,8 @@ Session ID: 97f12378ae481dd720fe201a8a4ecaf5
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Login_With_Valid_UserName_and_Password_through_Data_Table
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded45.png' src="../embedded45.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed()">
-                <span>Then user verify Ministatement Form is displayed</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir14572_426298009}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:56092}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 86fd1b4bd8bd7572216afeb24d6c2b1e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-	at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-	at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-	at ?.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:24)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
-                <span>Then user click on logOut from Application</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
-                <span>When user close the browser</span>
-      <div>Step skipped
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Verify MiniStatment Is Display</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded8.png' src="../embedded8.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_Navigate_to_URL(java.lang.String)">
-                <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded12.png' src="../embedded12.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_userName_as_and_passWord_as(java.lang.String,java.lang.String)">
-                <span>When user enter userName as "1303" and passWord as "Guru99"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded17.png' src="../embedded17.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
-                <span>When user click on submit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded25.png' src="../embedded25.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
-                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
           <div class="row mb-3"><div class="col-md-3">
     <img data-featherlight='../embedded32.png' src="../embedded32.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_click_on_Ministatement_link()">
-                <span>When user click on Ministatement link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded41.png' src="../embedded41.png">
     
     </div></div>
 </div>
@@ -985,48 +928,34 @@ Session ID: 86fd1b4bd8bd7572216afeb24d6c2b1e
               </div>
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_MiniStatment_Is_Display
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded42.png' src="../embedded42.png">
+    <img data-featherlight='../embedded33.png' src="../embedded33.png">
     
     </div></div>
 </div>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
                 <span>Then user click on logOut from Application</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=94.0.4606.71)
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir2540_1788509869}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61544}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7277a76d0d2f44631d37c7393a17fcc0
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
-	at Pages.LoginPage.clickOnLogOutbutton(LoginPage.java:67)
-	at Parallel.LoginStepDef.user_click_on_logOut_from_Application(LoginStepDef.java:57)
-	at ?.user click on logOut from Application(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:13)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Login_With_Valid_UserName_and_Password_through_Data_Table
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded34.png' src="../embedded34.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
                 <span>When user close the browser</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
           </div>
@@ -1035,28 +964,28 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Verify MiniStatment Is Display With Data Driven</div>
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Verify MiniStatment Is Display With Data Driven</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Verify MiniStatment Is Display With Data Driven</div>
+                  <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Verify MiniStatment Is Display With Data Driven</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded7.png' src="../embedded7.png">
+    <img data-featherlight='../embedded35.png' src="../embedded35.png">
     
     </div></div>
 </div>
@@ -1072,7 +1001,7 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded16.png' src="../embedded16.png">
+    <img data-featherlight='../embedded36.png' src="../embedded36.png">
     
     </div></div>
 </div>
@@ -1088,7 +1017,7 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded22.png' src="../embedded22.png">
+    <img data-featherlight='../embedded37.png' src="../embedded37.png">
     
     </div></div>
 </div>
@@ -1104,7 +1033,7 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded26.png' src="../embedded26.png">
+    <img data-featherlight='../embedded38.png' src="../embedded38.png">
     
     </div></div>
 </div>
@@ -1120,7 +1049,7 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded34.png' src="../embedded34.png">
+    <img data-featherlight='../embedded39.png' src="../embedded39.png">
     
     </div></div>
 </div>
@@ -1135,180 +1064,6 @@ Session ID: 7277a76d0d2f44631d37c7393a17fcc0
                   <div class="step pass-bg">
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_MiniStatment_Is_Display_With_Data_Driven
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded46.png' src="../embedded46.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then user verify Ministatement Form is displayed</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir5200_1116125153}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58201}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 7af96946cbdcbf280aa19ccf06ecca98
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-	at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-	at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-	at ?.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/Ministatement.feature:33)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then user click on logOut from Application</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When user close the browser</span>
-      <div>Step skipped
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Transaction List Functionality</p>
-            <p class="text-sm">
-              <span>21:31:10 pm</span> / <span>30:59:888</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">Transaction List Functionality</h5>
-<span class='badge badge-success'>10.02.2021 21:31:10</span>
-<span class='badge badge-danger'>10.02.2021 21:32:10</span>
-<span class='badge badge-default'>30:59:888</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Verify Transaction List Is Displayed With Data Driven</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="scenario_outline ">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Verify Transaction List Is Displayed With Data Driven</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded3.png' src="../embedded3.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded15.png' src="../embedded15.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user enter userName as "1303" and passWord as "Guru99"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded24.png' src="../embedded24.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When user click on submit button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded33.png' src="../embedded33.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user verify home page as "Guru99 Bank" is displayed</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
     <img data-featherlight='../embedded40.png' src="../embedded40.png">
     
@@ -1318,103 +1073,90 @@ Session ID: 7af96946cbdcbf280aa19ccf06ecca98
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When user click on Ministatement link</span>
+                    <span>Then user verify Ministatement Form is displayed</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
                     <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+      <div>Verify_MiniStatment_Is_Display_With_Data_Driven
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded43.png' src="../embedded43.png">
+    <img data-featherlight='../embedded41.png' src="../embedded41.png">
     
     </div></div>
 </div>
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>Then user verify Ministatement Form is displayed</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir12700_258847733}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64994}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 6b7198541ef67a6d45146be8ded31a3e
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-	at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-	at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-	at ?.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/TransactionList.feature:24)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When user select account number from account dropdown list</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When user click on submit</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then user verify transaction list is displayed</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Then user click on logOut from Application</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_MiniStatment_Is_Display_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded42.png' src="../embedded42.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
                     <span>When user close the browser</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
               </div>
             </div>
         </div>
   </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="113"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Transaction List Functionality</p>
+            <p class="text-sm">
+              <span>12:50:10 pm</span> / <span>30:22:769</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Transaction List Functionality</h5>
+<span class='badge badge-success'>10.10.2021 12:50:10</span>
+<span class='badge badge-danger'>10.10.2021 12:50:33</span>
+<span class='badge badge-default'>30:22:769</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=113</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Verify Transaction List Is Displayed</div>
+        <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>Verify Transaction List Is Displayed</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE_STEP">
                 <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
       <div>Verify_Transaction_List_Is_Displayed
           <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    <img data-featherlight='../embedded43.png' src="../embedded43.png">
     
     </div></div>
 </div>
@@ -1423,70 +1165,6 @@ Session ID: 6b7198541ef67a6d45146be8ded31a3e
               </div>
               <div class="step pass-bg" title="Parallel.LoginStepDef.user_Navigate_to_URL(java.lang.String)">
                 <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded9.png' src="../embedded9.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_userName_as_and_passWord_as(java.lang.String,java.lang.String)">
-                <span>When user enter userName as "1303" and passWord as "Guru99"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded19.png' src="../embedded19.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
-                <span>When user click on submit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded29.png' src="../embedded29.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
-                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="BEFORE_STEP">
-                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
-      <div>Verify_Transaction_List_Is_Displayed
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded36.png' src="../embedded36.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_click_on_Ministatement_link()">
-                <span>When user click on Ministatement link</span>
       <div>
       </div>
               </div>
@@ -1501,69 +1179,356 @@ Session ID: 6b7198541ef67a6d45146be8ded31a3e
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed()">
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_enter_userName_as_and_passWord_as(java.lang.String,java.lang.String)">
+                <span>When user enter userName as "1303" and passWord as "Guru99"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded45.png' src="../embedded45.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_submit_button()">
+                <span>When user click on submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded46.png' src="../embedded46.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_verify_home_page_as_is_displayed(java.lang.String)">
+                <span>Then user verify home page as "Guru99 Bank" is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded47.png' src="../embedded47.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_click_on_Ministatement_link()">
+                <span>When user click on Ministatement link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded48.png' src="../embedded48.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed()">
                 <span>Then user verify Ministatement Form is displayed</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Mini Statement Form']"}
-  (Session info: chrome=94.0.4606.71)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MSI', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}), userDataDir=C:\Users\MOGALA~1\AppData\Local\Temp\scoped_dir13572_1626198286}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64995}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=94.0.4606.71, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 4f3a9aeb13735c635dd08a581f53febd
-*** Element info: {Using=xpath, value=//p[text()='Mini Statement Form']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-	at Pages.DemoSitePage.verifyMiniStatementFormDislayed(DemoSitePage.java:57)
-	at Parallel.DemoSiteStepDef.user_verify_Ministatement_Form_is_displayed(DemoSiteStepDef.java:24)
-	at ?.user verify Ministatement Form is displayed(file:///C:/Users/Mogalaiah%20Gannepaka/WorkSpaceForCucumberProject/SeleniumJavaFramework/Maven_Cucumber_TestNG/src/test/resources/Feature/TransactionList.feature:12)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.DemoSiteStepDef.user_select_account_number_from_account_dropdown_list()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded49.png' src="../embedded49.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_select_account_number_from_account_dropdown_list()">
                 <span>When user select account number from account dropdown list</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.DemoSiteStepDef.user_click_on_submit()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded50.png' src="../embedded50.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_click_on_submit()">
                 <span>When user click on submit</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.DemoSiteStepDef.user_verify_transaction_list_is_displayed()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded51.png' src="../embedded51.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.DemoSiteStepDef.user_verify_transaction_list_is_displayed()">
                 <span>Then user verify transaction list is displayed</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded52.png' src="../embedded52.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_click_on_logOut_from_Application()">
                 <span>Then user click on logOut from Application</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded53.png' src="../embedded53.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.LoginStepDef.user_close_the_browser()">
                 <span>When user close the browser</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
           </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="140"><span class="badge log pass-bg mr-2">Pass</span>Verify Transaction List Is Displayed With Data Driven</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="141"><span class="badge log pass-bg mr-2">Pass</span>Verify Transaction List Is Displayed With Data Driven</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded54.png' src="../embedded54.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given user Navigate to URL "http://demo.guru99.com/Agile_Project/Agi_V1/index.php"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded55.png' src="../embedded55.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user enter userName as "1303" and passWord as "Guru99"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded56.png' src="../embedded56.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click on submit button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded57.png' src="../embedded57.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify home page as "Guru99 Bank" is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded58.png' src="../embedded58.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click on Ministatement link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded59.png' src="../embedded59.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify Ministatement Form is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded60.png' src="../embedded60.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user select account number from account dropdown list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded61.png' src="../embedded61.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded62.png' src="../embedded62.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify transaction list is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded63.png' src="../embedded63.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user click on logOut from Application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Parallel.Hooks_Application.takeScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify_Transaction_List_Is_Displayed_With_Data_Driven
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded64.png' src="../embedded64.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user close the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
 </div>
@@ -1589,15 +1554,15 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Regression,smoke</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@Regression</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Regression,smoke</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1608,23 +1573,13 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:04 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='5'>Login With Valid UserName and Password through Data Table</a>
+<a href="#" class="linked" test-id='1' id='2'>Login With Valid UserName and Password</a>
 <div class="">
-<span class="badge badge-default">MiniStatment Functionality.Login With Valid UserName and Password through Data Table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='15'>Login With Valid UserName and Password through Data Table</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password through Data Table</span>
+<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password</span>
 </div>
 </td>
 </tr>
@@ -1635,7 +1590,7 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@Smoke</p>
 <p class="duration text-sm">1 tests</p>
@@ -1643,7 +1598,7 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Smoke</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1654,11 +1609,11 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Login With Valid UserName and Password with Data Driven</a>
+<a href="#" class="linked" test-id='1' id='35'>Login With Valid UserName and Password with Data Driven</a>
 <div class="">
 <span class="badge badge-default">Login Functionality.Login With Valid UserName and Password with Data Driven</span>
 </div>
@@ -1671,7 +1626,53 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>5</span>
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Regression,smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression,smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Login With Valid UserName and Password through Data Table</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password through Data Table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='51' id='72'>Login With Valid UserName and Password through Data Table</a>
+<div class="">
+<span class="badge badge-default">MiniStatment Functionality.Login With Valid UserName and Password through Data Table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
 </span>
 <p class="name">@Regression,Smoke</p>
 <p class="duration text-sm">5 tests</p>
@@ -1679,7 +1680,7 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Regression,Smoke</h4>
-<span status="fail" class='badge log badge-danger'>5 failed</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1690,237 +1691,53 @@ Session ID: 4f3a9aeb13735c635dd08a581f53febd
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='5'>Login With Valid UserName and Password through Data Table</a>
-<div class="">
-<span class="badge badge-default">MiniStatment Functionality.Login With Valid UserName and Password through Data Table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='7'>Verify MiniStatment Is Display</a>
+<a href="#" class="linked" test-id='51' id='52'>Verify MiniStatment Is Display</a>
 <div class="">
 <span class="badge badge-default">MiniStatment Functionality.Verify MiniStatment Is Display</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='10'>Verify Transaction List Is Displayed With Data Driven</a>
+<a href="#" class="linked" test-id='51' id='72'>Login With Valid UserName and Password through Data Table</a>
 <div class="">
-<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed With Data Driven</span>
+<span class="badge badge-default">MiniStatment Functionality.Login With Valid UserName and Password through Data Table</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:49:58 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='11'>Verify Transaction List Is Displayed</a>
-<div class="">
-<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='13'>Verify MiniStatment Is Display With Data Driven</a>
+<a href="#" class="linked" test-id='51' id='93'>Verify MiniStatment Is Display With Data Driven</a>
 <div class="">
 <span class="badge badge-default">MiniStatment Functionality.Verify MiniStatment Is Display With Data Driven</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@Regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Regression</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:10 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:50:10 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='6'>Login With Valid UserName and Password</a>
+<a href="#" class="linked" test-id='113' id='114'>Verify Transaction List Is Displayed</a>
 <div class="">
-<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password</span>
+<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoAlertPresentException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoAlertPresentException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:36 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:50:22 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='109'>Then user click on logOut from Application</a>
+<a href="#" class="linked" test-id='113' id='141'>Verify Transaction List Is Displayed With Data Driven</a>
 <div class="">
-<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password with Data Driven.Then user click on logOut from Application</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:36 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='107'>When user click on logOut from Application</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password through Data Table.When user click on logOut from Application</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:36 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='108'>When user click on logOut from Application</a>
-<div class="">
-<span class="badge badge-default">Login Functionality.Login With Valid UserName and Password.When user click on logOut from Application</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:36 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='114'>Then user click on logOut from Application</a>
-<div class="">
-<span class="badge badge-default">MiniStatment Functionality.Verify MiniStatment Is Display.Then user click on logOut from Application</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='129'>Then user verify Ministatement Form is displayed</a>
-<div class="">
-<span class="badge badge-default">MiniStatment Functionality.Login With Valid UserName and Password through Data Table.Then user verify Ministatement Form is displayed</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='128'>Then user verify Ministatement Form is displayed</a>
-<div class="">
-<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed.Then user verify Ministatement Form is displayed</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:31:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='127'>Then user verify Ministatement Form is displayed</a>
-<div class="">
-<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed With Data Driven.Then user verify Ministatement Form is displayed</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:32:59 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='158'>Then user verify Ministatement Form is displayed</a>
-<div class="">
-<span class="badge badge-default">MiniStatment Functionality.Verify MiniStatment Is Display With Data Driven.Then user verify Ministatement Form is displayed</span>
+<span class="badge badge-default">Transaction List Functionality.Verify Transaction List Is Displayed With Data Driven</span>
 </div>
 </td>
 </tr>

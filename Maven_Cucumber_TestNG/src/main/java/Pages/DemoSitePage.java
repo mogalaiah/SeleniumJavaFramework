@@ -1,18 +1,18 @@
 package Pages;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import Utility.DriverFactory;
-import junit.framework.Assert;
+
+import Logs.LogClass;
+import Utility.BaseClass;
 
 public class DemoSitePage {
 	public WebDriver driver;
-	Logger log = Logger.getLogger(DemoSitePage.class); 
+	BaseClass baseClass = new BaseClass();
 
 	public DemoSitePage(WebDriver driver) {
 		this.driver = driver;
@@ -47,41 +47,45 @@ public class DemoSitePage {
 	@CacheLookup
 	private WebElement labelTransactionList;
 
-
 	public void clickOnMinistatementLink() {
 		linkMiniStatement.click();
+		LogClass.logger.info("Mini Statement Link Was Clicked Successfully");
 	}
 
 	public Boolean verifyMiniStatementFormDislayed() {
 		Boolean flag;
 		if (labelMinistementform.isDisplayed()) {
-			flag=true;
-			log.info("Mini Statement Form Is Dislayed");
+			flag = true;
+			LogClass.logger.info("Mini Statement Form Is Displayed Successfully");
+			baseClass.highlightWebElement(driver, labelMinistementform);
 		} else {
-			flag=false;
-			log.info("Mini Statement Form Not Is Dislayed");
+			flag = false;
+			LogClass.logger.info("Mini Statement Form Not Is Displayed Successfully");
 		}
 		return flag;
 	}
 
 	public void selectAccountNumberFromDropdown(String accountnmber) {
 		new Select(selectAccountNo).selectByVisibleText(accountnmber);
+		LogClass.logger.info("Selected " + accountnmber + " from dropdown Successfully: ");
 	}
 
 	public void clickOnSubmitButton() {
 		buttonAccSubmit.click();
+		LogClass.logger.info("Account Submit Button Was Clicked Successfully");
 	}
 
 	public Boolean verifyTrasactionListIsDisplayed() {
 		Boolean flag;
 		if (labelTransactionList.isDisplayed()) {
-			flag=true;
-			log.info("Transaction List Is Dislayed");
+			flag = true;
+			LogClass.logger.info("Verified Trasaction List is displayed Successfully:");
+			baseClass.highlightWebElement(driver, labelTransactionList);
 		} else {
-			flag=false;
-			log.info("Transaction List Not Is Dislayed");
+			flag = false;
+			LogClass.logger.info("Verified Trasaction List is not displayed Successfully:");
 		}
-		return flag;		
+		return flag;
 	}
 
 }

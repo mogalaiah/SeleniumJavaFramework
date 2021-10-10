@@ -13,9 +13,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import Logs.LogClass;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
@@ -29,6 +33,7 @@ public class DriverFactory {
 			// URL url= new URL("http://localhost:4444/wd/hub");
 			WebDriverManager.chromedriver().setup();
 			tlDriver.set(new ChromeDriver());
+			LogClass.logger.info("chrome Browser Is Lunched: ");
 			// tlDriver.set(new RemoteWebDriver(url,dc));
 		} else if (browser.equals("firefox")) {
 			DesiredCapabilities dc= DesiredCapabilities.firefox();
@@ -36,15 +41,16 @@ public class DriverFactory {
 			//WebDriverManager.firefoxdriver().setup();
 			//tlDriver.set(new FirefoxDriver());
 			tlDriver.set(new RemoteWebDriver(url, dc));
+			LogClass.logger.info("Firefox Browser Is Lunched: ");
 		} else if (browser.equals("opera")) {
 			DesiredCapabilities dc= DesiredCapabilities.opera();
 			URL url= new URL("http://localhost:4444/wd/hub");
 		//	WebDriverManager.iedriver().setup();
 		//	tlDriver.set(new InternetExplorerDriver());
 			tlDriver.set(new RemoteWebDriver(url,dc));
+			LogClass.logger.info("Opera Browser Is Lunched: ");
 		} else {
-			System.out.println("Please Pass the correct driver value: " + browser);
-			log.info("Please Pass the correct driver value: " + browser);
+			LogClass.logger.info("Invalid Browser Is Lunched: "+browser);
 		}
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
@@ -53,20 +59,8 @@ public class DriverFactory {
 	}
 
 	public static synchronized WebDriver getDriver() {
+		LogClass.logger.info("Browser Is Opened");
 		return tlDriver.get();
-	}
-	public static String getScreenshot(WebDriver driver) {
-		TakesScreenshot fi = (TakesScreenshot) driver;
-		File screenShot = fi.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/Screenshot/" + System.currentTimeMillis() + ".png";
-		File destination = new File(path);
-		try {
-			FileUtils.copyFile(screenShot, destination);
-		} catch (Exception e) {
-			System.out.println("Error Message" + e.getMessage());
-		}
-		return path;
-
 	}
 
 }
